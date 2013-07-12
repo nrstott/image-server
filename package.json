@@ -1,7 +1,7 @@
 {
   "name": "image-server",
   "description": "JSGI Image Server with Image Resizing Capabilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "image",
     "image resize",
