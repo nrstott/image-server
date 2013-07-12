@@ -44,9 +44,11 @@ function imageServer(opts) {
       var stat = bogart.promisify(fs.stat)
         , exec = bogart.promisify(childProcess.exec);
 
-      return exists(reqPath).then(function(fileExists) {
+      return exists(reqPath).then(function (fileExists) {
 
-        if(!fileExists) return next(req);
+        if (!fileExists) {
+          return next(req);
+        }
 
         return stat(reqPath).then(function (stat) {
           if (stat.isFile()) {
@@ -80,20 +82,5 @@ function exists(path) {
 
   return deferred.promise;
 }
-
-// function exec(command) {
-//   var deferred = q.defer();
-
-//   childProcess.exec(command, function (err) {
-//     if (err) {
-//       deferred.reject(err);
-//     }
-//     else {
-//       deferred.resolve(true);
-//     }
-//   });
-
-//   return deferred.promise;
-// }
 
 module.exports = imageServer;
