@@ -1,0 +1,22 @@
+{
+  "name": "image-server",
+  "description": "JSGI Image Server with Image Resizing Capabilities",
+  "version": "1.0.0",
+  "keywords": [
+    "image",
+    "image resize",
+    "jsgi"
+  ],
+  "author": {
+    "name": "Nathan Stott",
+    "email": "nrstott@gmail.com"
+  },
+  "email": "nathan.stott@whiteboard-it.com",
+  "dependencies": {
+    "q": "0.8.12",
+    "bogart": ">=0.4.0"
+  },
+  "_id": "image-server@1.0.0",
+  "readme": "ERROR: No README.md file found!",
+  "_from": "image-server@>0.0.0"
+}
